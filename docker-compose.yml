@@ -1,0 +1,15 @@
+services:
+  f1tenth_dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        USER_UID: ${UID:-1000}
+        USER_GID: ${GID:-1000}
+    image: f1tenth-lab1
+    container_name: f1tenth_dev
+    stdin_open: true   # equivalente a -i
+    tty: true          # equivalente a -t
+    volumes:
+      - .:/f1tenth_ws
+    working_dir: /f1tenth_ws

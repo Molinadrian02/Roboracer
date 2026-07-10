@@ -1,0 +1,82 @@
+[0.000000] (-) TimerEvent: {}
+[0.000302] (lab1_pkg) JobQueued: {'identifier': 'lab1_pkg', 'dependencies': OrderedDict()}
+[0.000359] (lab1_pkg) JobStarted: {'identifier': 'lab1_pkg'}
+[0.008817] (lab1_pkg) JobProgress: {'identifier': 'lab1_pkg', 'progress': 'cmake'}
+[0.009376] (lab1_pkg) Command: {'cmd': ['/usr/bin/cmake', '/f1tenth_ws/src/lab1_pkg', '-DCMAKE_INSTALL_PREFIX=/f1tenth_ws/src/install/lab1_pkg'], 'cwd': '/f1tenth_ws/src/build/lab1_pkg', 'env': OrderedDict([('HOSTNAME', 'f8e267b29681'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/devuser'), ('OLDPWD', '/f1tenth_ws/src/lab1_pkg'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '\\[\x1b[1;36m\\]🏎️  f1tenth\\[\x1b[0m\\] \\[\x1b[1;32m\\]\\w\\[\x1b[0m\\] #'), ('COLCON_PREFIX_PATH', '/f1tenth_ws/src/lab1_pkg/scripts/install:/f1tenth_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/f1tenth_ws/install/lab1_pkg:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('PWD', '/f1tenth_ws/src/build/lab1_pkg'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/f1tenth_ws/install/lab1_pkg:/opt/ros/humble')]), 'shell': False}
+[0.064527] (lab1_pkg) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099753] (-) TimerEvent: {}
+[0.118719] (lab1_pkg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.126914] (lab1_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.187741] (lab1_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.193881] (lab1_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.194029] (lab1_pkg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.194264] (lab1_pkg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.196342] (lab1_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199835] (-) TimerEvent: {}
+[0.269369] (lab1_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.277999] (lab1_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.278337] (lab1_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.278702] (lab1_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.281346] (lab1_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300042] (-) TimerEvent: {}
+[0.400421] (-) TimerEvent: {}
+[0.407758] (lab1_pkg) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.487580] (lab1_pkg) StdoutLine: {'line': b'-- Found ackermann_msgs: 2.0.2 (/opt/ros/humble/share/ackermann_msgs/cmake)\n'}
+[0.500621] (-) TimerEvent: {}
+[0.537631] (lab1_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.543558] (lab1_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.550982] (lab1_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.561283] (lab1_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.573000] (lab1_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.598089] (lab1_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.600757] (-) TimerEvent: {}
+[0.622548] (lab1_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.624185] (lab1_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.696250] (lab1_pkg) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.700997] (-) TimerEvent: {}
+[0.720415] (lab1_pkg) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.759464] (lab1_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.765050] (lab1_pkg) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.801241] (-) TimerEvent: {}
+[0.829496] (lab1_pkg) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.829727] (lab1_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.899136] (lab1_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.900437] (lab1_pkg) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.901317] (-) TimerEvent: {}
+[0.929638] (lab1_pkg) StdoutLine: {'line': b'-- Found rclpy: 3.3.21 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[0.930291] (lab1_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.987267] (lab1_pkg) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.987850] (lab1_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.988181] (lab1_pkg) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.991056] (lab1_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.991971] (lab1_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.994703] (lab1_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[0.996135] (lab1_pkg) StdoutLine: {'line': b'-- Build files have been written to: /f1tenth_ws/src/build/lab1_pkg\n'}
+[1.001406] (-) TimerEvent: {}
+[1.003417] (lab1_pkg) CommandEnded: {'returncode': 0}
+[1.003967] (lab1_pkg) JobProgress: {'identifier': 'lab1_pkg', 'progress': 'build'}
+[1.004667] (lab1_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/f1tenth_ws/src/build/lab1_pkg', '--', '-j12', '-l12'], 'cwd': '/f1tenth_ws/src/build/lab1_pkg', 'env': OrderedDict([('HOSTNAME', 'f8e267b29681'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/devuser'), ('OLDPWD', '/f1tenth_ws/src/lab1_pkg'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '\\[\x1b[1;36m\\]🏎️  f1tenth\\[\x1b[0m\\] \\[\x1b[1;32m\\]\\w\\[\x1b[0m\\] #'), ('COLCON_PREFIX_PATH', '/f1tenth_ws/src/lab1_pkg/scripts/install:/f1tenth_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/f1tenth_ws/install/lab1_pkg:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('PWD', '/f1tenth_ws/src/build/lab1_pkg'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/f1tenth_ws/install/lab1_pkg:/opt/ros/humble')]), 'shell': False}
+[1.047152] (lab1_pkg) CommandEnded: {'returncode': 0}
+[1.047675] (lab1_pkg) JobProgress: {'identifier': 'lab1_pkg', 'progress': 'install'}
+[1.056363] (lab1_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/f1tenth_ws/src/build/lab1_pkg'], 'cwd': '/f1tenth_ws/src/build/lab1_pkg', 'env': OrderedDict([('HOSTNAME', 'f8e267b29681'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/devuser'), ('OLDPWD', '/f1tenth_ws/src/lab1_pkg'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '\\[\x1b[1;36m\\]🏎️  f1tenth\\[\x1b[0m\\] \\[\x1b[1;32m\\]\\w\\[\x1b[0m\\] #'), ('COLCON_PREFIX_PATH', '/f1tenth_ws/src/lab1_pkg/scripts/install:/f1tenth_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/f1tenth_ws/install/lab1_pkg:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('PWD', '/f1tenth_ws/src/build/lab1_pkg'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/f1tenth_ws/install/lab1_pkg:/opt/ros/humble')]), 'shell': False}
+[1.062957] (lab1_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.063350] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/src/install/lab1_pkg/lib/lab1_pkg/talker.py\n'}
+[1.063534] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/src/install/lab1_pkg/lib/lab1_pkg/relay.py\n'}
+[1.063583] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/src/install/lab1_pkg/share/ament_index/resource_index/package_run_dependencies/lab1_pkg\n'}
+[1.063625] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/src/install/lab1_pkg/share/ament_index/resource_index/parent_prefix_path/lab1_pkg\n'}
+[1.063663] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/src/install/lab1_pkg/share/lab1_pkg/environment/ament_prefix_path.sh\n'}
+[1.063746] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/src/install/lab1_pkg/share/lab1_pkg/environment/ament_prefix_path.dsv\n'}
+[1.063787] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/src/install/lab1_pkg/share/lab1_pkg/environment/path.sh\n'}
+[1.063827] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/src/install/lab1_pkg/share/lab1_pkg/environment/path.dsv\n'}
+[1.063899] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/src/install/lab1_pkg/share/lab1_pkg/local_setup.bash\n'}
+[1.063937] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/src/install/lab1_pkg/share/lab1_pkg/local_setup.sh\n'}
+[1.063994] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/src/install/lab1_pkg/share/lab1_pkg/local_setup.zsh\n'}
+[1.064070] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/src/install/lab1_pkg/share/lab1_pkg/local_setup.dsv\n'}
+[1.064189] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/src/install/lab1_pkg/share/lab1_pkg/package.dsv\n'}
+[1.064277] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/src/install/lab1_pkg/share/ament_index/resource_index/packages/lab1_pkg\n'}
+[1.064365] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/src/install/lab1_pkg/share/lab1_pkg/cmake/lab1_pkgConfig.cmake\n'}
+[1.064436] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/src/install/lab1_pkg/share/lab1_pkg/cmake/lab1_pkgConfig-version.cmake\n'}
+[1.064517] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /f1tenth_ws/src/install/lab1_pkg/share/lab1_pkg/package.xml\n'}
+[1.066174] (lab1_pkg) CommandEnded: {'returncode': 0}
+[1.082814] (lab1_pkg) JobEnded: {'identifier': 'lab1_pkg', 'rc': 0}
+[1.083488] (-) EventReactorShutdown: {}
