@@ -11,6 +11,9 @@ find_package(ackermann_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclpy REQUIRED)
 
+# ============================
+# Executable for Python  nodes
+# ============================
 # Add nodes of ROS2 package
 install(PROGRAMS
   scripts/talker.py
@@ -23,6 +26,27 @@ install(DIRECTORY
   launch
   DESTINATION share/${PROJECT_NAME}
 )
+
+# ========================
+# Executable for C++ nodes
+# ========================
+# Add nodes of ROS2 package
+add_executable(talker_cpp src/talker_c++.cpp)
+ament_target_dependencies(talker_cpp rclcpp ackermann_msgs)
+
+install(TARGETS
+  talker_cpp
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+add_executable(relay_cpp src/relay_c++.cpp)
+ament_target_dependencies(relay_cpp rclcpp ackermann_msgs)
+
+install(TARGETS
+  relay_cpp
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights

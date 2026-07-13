@@ -12,13 +12,13 @@ class SubscriberNode(Node):
         self.subscription_ = self.create_subscription(
             AckermannDriveStamped,
             'drive',
-            self.listener_callback,
-            10
+            self.listener_callback, # Set the callback function to be called whenever a new message is received on the 'drive' topic
+            10 # queue size
         ) # Create a subscription to the 'drive' topic, which will call the listener_callback function whenever a new message is received. The queue size is set to 10.
         self.publisher_ = self.create_publisher(AckermannDriveStamped, 'drive_relay', 10) # Creates a publisher that publishes AckermannDriveStamped messages on the 'drive_relay' topic with a queue size of 10
 
     def listener_callback(self, msg):
-        relay_msg = AckermannDriveStamped() # Create a new AckermannDriveStamped message to relay the received message.0
+        relay_msg = AckermannDriveStamped() # Create a new AckermannDriveStamped message to relay the received message
         relay_msg.drive.speed = msg.drive.speed*3 # Set the speed of the relay message to be 3 times the speed of the received message
         relay_msg.drive.steering_angle = msg.drive.steering_angle*3 # Set the steering angle of the relay message to be 3 times the steering angle of the received message
         self.publisher_.publish(relay_msg) # Publish the relay message on the 'drive_relay' topic
