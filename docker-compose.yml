@@ -4,12 +4,18 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        USER_UID: ${UID:-1000}
-        USER_GID: ${GID:-1000}
+        USER_UID: ${HOST_UID:-1000}
+        USER_GID: ${HOST_GID:-1000}
     image: f1tenth-lab1
     container_name: f1tenth_dev
     stdin_open: true   # equivalente a -i
     tty: true          # equivalente a -t
     volumes:
       - .:/f1tenth_ws
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw   # comparte el socket X11 del host
+    ports:
+      - "8080:8080"                         # interfaz web de f1tenth_websim -> http://localhost:8080
+    environment:
+      - DISPLAY=${DISPLAY}                  # le dice al contenedor a qué pantalla conectarse
+      - QT_X11_NO_MITSHM=1                   # evita problemas comunes de renderizado con Qt (usa RViz2/Qt)
     working_dir: /f1tenth_ws

@@ -1,0 +1,15 @@
+image: pasillo_aeb.png
+resolution: 0.05
+origin:
+- -0.5
+- -1.7
+- 0.0
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+websim_spawn:
+- 1.5
+- 0.0
+- 0.0
+websim_description: Pasillo recto de 26 m cerrado al fondo. Para probar el frenado
+  de emergencia (lab 2).

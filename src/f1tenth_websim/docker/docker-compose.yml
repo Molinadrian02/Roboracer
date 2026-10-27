@@ -1,0 +1,21 @@
+# Lanzar desde la carpeta del paquete:   docker compose -f docker/docker-compose.yml up --build
+# Interfaz: http://localhost:8080
+services:
+  websim:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: f1tenth_websim
+    container_name: websim
+    # Red e IPC del host: así DDS ve a tus nodos aunque corran en otro contenedor
+    # (tu devcontainer también debe usar network_mode: host e ipc: host).
+    network_mode: host
+    ipc: host
+    environment:
+      - ROS_DOMAIN_ID=${ROS_DOMAIN_ID:-0}
+    volumes:
+      # Mapas propios: deja aquí pares .yaml + .png y aparecerán en el selector
+      - ../maps_extra:/maps_extra:ro
+    command: >
+      ros2 run f1tenth_websim websim --maps /maps_extra
+    restart: unless-stopped

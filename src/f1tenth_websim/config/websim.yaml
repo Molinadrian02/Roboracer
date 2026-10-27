@@ -1,0 +1,42 @@
+# Configuración de websim. Los nombres siguen el sim.yaml de f1tenth_gym_ros
+# para que puedas copiar valores de uno a otro.
+
+port: 8080                 # la interfaz queda en http://localhost:8080
+host: 0.0.0.0
+map: pasillo_aeb           # mapa inicial (nombre del .yaml, sin extensión)
+mode: mix                  # quién conduce al arrancar: ros | mix | kbd
+
+# Carpetas extra donde buscar mapas (.yaml + .png en formato map_server).
+# Las primeras son las del simulador oficial: si existen, aparecen levine y compañía.
+# /f1tenth_ws es el punto de montaje de este workspace (ver docker-compose.yml);
+# /sim_ws se mantiene por compatibilidad con el contenedor oficial de f1tenth_gym_ros.
+extra_map_dirs:
+  - /f1tenth_ws/src/f1tenth_gym_ros/maps
+  - /sim_ws/src/f1tenth_gym_ros/maps
+  - /f1tenth_ws/src/f1tenth_websim/maps_extra   # tus mapas propios (.yaml + .png)
+
+# Topics (iguales que en gym_bridge)
+ego_namespace: ego_racecar
+ego_scan_topic: /scan
+ego_odom_topic: /ego_racecar/odom
+ego_drive_topic: /drive
+
+# Freno de emergencia por ROS (std_msgs/Bool). Tiene prioridad absoluta sobre
+# /drive y sobre el teclado, igual que la tecla X de la interfaz. Caduca solo
+# si el nodo deja de publicarlo, para que el coche no quede bloqueado.
+ego_estop_topic: /emergency_brake
+estop_timeout: 1.0
+
+# LiDAR (Hokuyo UST-10LX: 270°, 40 Hz)
+scan_beams: 1080
+scan_fov: 4.7
+scan_max_range: 30.0
+scan_noise_std: 0.01
+scan_rate: 40.0
+scan_distance_to_base_link: 0.0
+
+odom_rate: 100.0
+timestep: 0.01
+
+# En modo "Teclado + ROS", cuánto tiempo (s) manda un mensaje de /drive sobre el teclado
+mix_priority_window: 0.25

@@ -1,3 +1,6 @@
 **log/
 **build/
 **install/
+**simulador/
+__pycache__/
+*.pyc
