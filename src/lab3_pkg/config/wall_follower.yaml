@@ -1,0 +1,10 @@
+wall_follower:
+  ros__parameters:
+    k_p: 1.0
+    k_i: 0.0
+    k_d: 0.0
+    desired_distance: 1.0
+    lookahead_distance: 1.0
+    max_steering_angle: 0.4189
+    angle_between_beams: 1.0
+    

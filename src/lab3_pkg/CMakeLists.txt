@@ -18,6 +18,12 @@ install(PROGRAMS
   DESTINATION lib/${PROJECT_NAME} # Destination is in the lib because ROS2 run command looks for executables in the lib folder of the package
 )
 
+install(DIRECTORY
+  launch
+  config
+  DESTINATION share/${PROJECT_NAME}
+)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
